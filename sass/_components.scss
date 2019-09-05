@@ -1,0 +1,94 @@
+.logo{
+    font-size:2rem;
+    font-weight:900;
+    color:var(--color-white);
+    letter-spacing:.1rem;
+    font-family: 'Lexend Deca', sans-serif;
+
+    
+}
+    
+    .blue-span{
+        color:var(--color-dark-blue);
+        font-size:2.5rem;
+        font-weight:700;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+
+
+.header-content{
+
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.header-image{
+text-align: right;
+
+    & img{
+        margin-top:10rem;
+       max-width:80%;
+       height:auto;
+        
+    }
+}
+
+.header-textbox{
+    color:var(--color-white);
+    max-width:40rem;
+    font-size:1.5rem;
+    align-items:center;
+    margin-bottom:8rem;
+    
+    &__h2{
+        font-size:3.5rem;
+        font-weight: 400;
+        font-family: 'Pacifico', cursive;
+        margin-bottom:.8rem;
+
+    }
+
+    &__name{
+        font-weight:700;
+        font-size:3rem;
+        font-family: 'Lexend Deca', sans-serif;
+
+    }
+
+
+    &__company{
+        font-size:2rem;
+        font-weight:700;
+        margin-bottom:2rem;
+
+    }
+
+    &__details{
+        font-size:1.4rem;
+        letter-spacing:.1rem;
+    }
+}
+
+
+.textbox-button{
+    margin-top:3rem;
+    background-color: var(--color-light-blue-btn);
+    text-align:center;
+    border-radius:10rem;
+    width:10rem;
+    height:3rem;
+    font-size:1.3rem;
+    line-height:3rem;
+    transition:.3s;
+    cursor:pointer;
+    
+    &:hover{
+        background-color: var(--color-dark-blue);
+        color:black;
+    }
+}
+.about-us__button.textbox-button{
+    background-color:var(--color-purple);
+}

@@ -1,16 +1,12 @@
 {
-  "name": "weekly_web_dev",
+  "name": "p23",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "node-sass": "^4.12.0"
-  },
   "scripts": {
-
-    "compile:sass": "node-sass  sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.css"
   },
-  "author": "Jan Kadewski",
+  "author": "",
   "license": "ISC"
 }
