@@ -1,5 +1,5 @@
 .container{
-    max-width:120rem;
+    max-width:160rem;
     background-color: grey;
     margin:8rem auto;
     
@@ -76,7 +76,6 @@ margin-top:.5rem;
         
     }
 }
-
 // end of about us -------------------------------------
 
 //services 
@@ -100,24 +99,240 @@ margin-top:.5rem;
         }
 
         &__offer{
-            font-size:2rem;
+            font-size:2.7rem;
             text-transform: uppercase;
             font-family: 'Lexend Deca', sans-serif;
             font-weight: 700;
+            margin-bottom:7rem;
         }
 
 
         &--name{
             text-transform: uppercase;
         }
+
+        &-description{
+        
+        }
     }
     &--details--container{
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
+
 
     }
 
     &--detail{
-        flex-basis:30%;
+        
+        &:not(:last-child){
+            padding-right:4rem;
+        }
+
+        &__icon-box{
+        display:flex;
+            flex-wrap:wrap;
     }
+
+        &__icon-box img{
+            width:3rem;
+            height:3rem;
+        }
+
+    }
+}
+
+
+// end of services
+
+
+
+// start portfolio
+
+.portfolio{
+
+    
+
+    &--heading{
+        background-color:var(--color-white);
+        text-align:center;
+        padding: 5rem 0;
+    
+        &__h2{
+            font-size:2rem;
+            font-family: 'Pacifico', cursive;
+            opacity:.7;
+        }
+
+        &__subtittle{
+
+            text-transform: uppercase;
+            padding-top:.7rem;
+            font-size:2rem;
+            font-weight: 900;
+            font-family: 'Lexend Deca', sans-serif;
+
+        }
+    }
+}
+
+.clients{
+    background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(../img/clientBg.png);
+    background-size:cover;
+    padding:10rem 18rem;
+
+    &--heading{
+        text-align:center;
+        color:var(--color-white);
+    
+    
+        &__h2{
+            font-family: 'Pacifico', cursive;
+            font-size:2.5rem;
+            letter-spacing:.1rem;
+            font-weight:400;
+        }
+
+        &__subtittle{
+
+            text-transform: uppercase;
+            padding-top:.7rem;
+            font-size:3rem;
+            font-weight: 900;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+
+        &__description{
+            margin-top:4rem;
+            font-size:1.2rem;
+
+        }
+    }
+
+
+    &-logo-box{
+        margin-top:10rem;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+}
+
+.blog{
+    padding:10rem 18rem;
+    background-color: var(--color-white);
+    color:var(--color-white);
+}
+.blog-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.blog-item{
+    &__h2{
+        font-family: 'Pacifico', cursive;
+        font-size:2rem;
+        letter-spacing:.1rem;
+        font-weight:400;
+        opacity:.7;
+        margin-bottom:.5rem;
+    }
+
+    &__subtittle{
+
+        text-transform: uppercase;
+        font-size:1.8rem;
+        font-weight: 900;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    
+    &__description{
+
+        margin-top:2rem;
+        letter-spacing:.1rem;
+    }
+
+
+    &1{
+        background-color: var(--color-white);
+        color:var(--color-black);
+        margin-right:4rem;
+
+    }
+
+    &2{
+        background-color:var(--color-dark-blue);
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        flex-direction: row;
+        justify-content: center;
+        margin-right:4rem;
+
+        
+        p{
+            font-size:1.3rem;
+            text-align:center;
+            font-weight: 700;
+            flex-grow:1;    
+            
+        }
+    }
+    &1,&2{
+
+        height:16rem;
+        width:40rem;
+
+    }
+
+    &3,&4{
+        height:15rem;
+        width:15rem;
+
+    }
+
+    &3{
+
+        background-color:grey;
+        margin-right:10rem;
+        color:var(--color-black);
+
+    }
+
+    &4{
+        background-color:black;
+    }
+
+    &5{
+        // background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4),url(../img/blogBc.png))
+        // background-image: url(../img/blogBc.png);
+        background: url(../img/blogBc.png);
+        background-repeat: no-repeat;
+        height:31rem;
+        width:40rem;
+        background-position:center;
+        color:white;
+    }
+
+    &6{
+
+        background-color: #e91d62;
+        height:15rem;
+        width:40rem;
+        text-align:center;
+
+
+        p{
+            font-weight:900;        
+            font-size:1.3rem;
+        }
+    }
+
+}
+
+.costam{
+    display:flex;
+    margin:2rem 2rem 2rem 0;
+    align-items:center
 }

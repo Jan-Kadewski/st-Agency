@@ -3,7 +3,8 @@
   --color-dark-blue:#0081ff;
   --color-dark-blue2:#007af3;
   --color-white:#fff;
-  --color-purple:#3b4374; }
+  --color-purple:#3b4374;
+  --color-black:#000; }
 
 * {
   margin: 0;
@@ -21,7 +22,8 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  background-color: grey; }
 
 .logo {
   font-size: 2rem;
@@ -84,13 +86,13 @@ body {
   cursor: pointer; }
   .textbox-button:hover {
     background-color: var(--color-dark-blue);
-    color: black; }
+    color: var(--color-black); }
 
 .about-us__button.textbox-button {
   background-color: var(--color-purple); }
 
 .container {
-  max-width: 120rem;
+  max-width: 160rem;
   background-color: grey;
   margin: 8rem auto; }
 
@@ -153,14 +155,149 @@ body {
       letter-spacing: .1rem;
       font-weight: 400; }
     .services--tittle__offer {
-      font-size: 2rem;
+      font-size: 2.7rem;
       text-transform: uppercase;
       font-family: 'Lexend Deca', sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-bottom: 7rem; }
     .services--tittle--name {
       text-transform: uppercase; }
   .services--details--container {
     display: flex;
-    justify-content: space-between; }
-  .services--detail {
-    flex-basis: 30%; }
+    justify-content: center; }
+  .services--detail:not(:last-child) {
+    padding-right: 4rem; }
+  .services--detail__icon-box {
+    display: flex;
+    flex-wrap: wrap; }
+  .services--detail__icon-box img {
+    width: 3rem;
+    height: 3rem; }
+
+.portfolio--heading {
+  background-color: var(--color-white);
+  text-align: center;
+  padding: 5rem 0; }
+  .portfolio--heading__h2 {
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    opacity: .7; }
+  .portfolio--heading__subtittle {
+    text-transform: uppercase;
+    padding-top: .7rem;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Lexend Deca', sans-serif; }
+
+.clients {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/clientBg.png);
+  background-size: cover;
+  padding: 10rem 18rem; }
+  .clients--heading {
+    text-align: center;
+    color: var(--color-white); }
+    .clients--heading__h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      letter-spacing: .1rem;
+      font-weight: 400; }
+    .clients--heading__subtittle {
+      text-transform: uppercase;
+      padding-top: .7rem;
+      font-size: 3rem;
+      font-weight: 900;
+      font-family: 'Lexend Deca', sans-serif; }
+    .clients--heading__description {
+      margin-top: 4rem;
+      font-size: 1.2rem; }
+  .clients-logo-box {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.blog {
+  padding: 10rem 18rem;
+  background-color: var(--color-white);
+  color: var(--color-white); }
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.blog-item__h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  font-weight: 400;
+  opacity: .7;
+  margin-bottom: .5rem; }
+
+.blog-item__subtittle {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-family: 'Lexend Deca', sans-serif; }
+
+.blog-item__description {
+  margin-top: 2rem;
+  letter-spacing: .1rem; }
+
+.blog-item1 {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  margin-right: 4rem; }
+
+.blog-item2 {
+  background-color: var(--color-dark-blue);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 4rem; }
+  .blog-item2 p {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+    flex-grow: 1; }
+
+.blog-item1, .blog-item2 {
+  height: 16rem;
+  width: 40rem; }
+
+.blog-item3, .blog-item4 {
+  height: 15rem;
+  width: 15rem; }
+
+.blog-item3 {
+  background-color: grey;
+  margin-right: 10rem;
+  color: var(--color-black); }
+
+.blog-item4 {
+  background-color: black; }
+
+.blog-item5 {
+  background: url(../img/blogBc.png);
+  background-repeat: no-repeat;
+  height: 31rem;
+  width: 40rem;
+  background-position: center;
+  color: white; }
+
+.blog-item6 {
+  background-color: #e91d62;
+  height: 15rem;
+  width: 40rem;
+  text-align: center; }
+  .blog-item6 p {
+    font-weight: 900;
+    font-size: 1.3rem; }
+
+.costam {
+  display: flex;
+  margin: 2rem 2rem 2rem 0;
+  align-items: center; }
